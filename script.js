@@ -19,6 +19,10 @@ $(document).ready(function() {
 
 // clear items from local storage
 
+// $(“.resetBtn”).on(“click”, function(){
+//     event.preventDefault();
+//     localStorage.clear();
+//     }
 
 // color code text area dependant on the time; past, present, future
     function checkHour() {
