@@ -19,126 +19,68 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <br>
     <p id="currentDay" class="lead"></p>
+      <button class="col-md-2 resetBtn">Reset Daily Schedule</button>
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
+    <div class="row timeblock" id="hour-8">
+      <div class="col-md-1">8 AM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-9">
+      <div class="col-md-1">9 AM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-10">
+      <div class="col-md-1">10 AM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-11">
+      <div class="col-md-1">11 AM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-12">
+      <div class="col-md-1">12 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-13">
+      <div class="col-md-1">1 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-14">
+      <div class="col-md-1">2 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-15">
+      <div class="col-md-1">3 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-16">
+      <div class="col-md-1">4 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
+    <div class="row timeblock" id="hour-17">
+      <div class="col-md-1">5 PM</div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="col-md-1 saveBtn">LOCK</button>
+    </div>
 
-    <table style="width: 100%;">
-      <tr id="row0">
-        <td>9:00am</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 9 am timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(0, 9)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row1">
-        <td>10:00am</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 10 am timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(1, 10)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row2">
-        <td>11:00am</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 11 am timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(2, 11)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row3">
-        <td>12:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 12 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(3, 12)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row4">
-        <td>1:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 1 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(4, 13)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row5">
-        <td>2:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 2 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(5, 14)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row6">
-        <td>3:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 3 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(6, 15)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-      <tr id="row7">
-        <td>4:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 4 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(7, 16)">
-            LOCK
-          </button>
-        </td>
-      <tr id="row8">
-        <td>5:00pm</td>
-        <td>
-          <input type="text" class="form-control" placeholder="Input for 5 pm timeblock" aria-label="9 am"
-            aria-describedby="button-addon2" />
-        </td>
-        <td>
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2, saveBtn" onclick="setTime(8, 17)">
-            LOCK
-          </button>
-        </td>
-      </tr>
-
-    </table>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="calendar.js"></script>
+  <!-- <script src="calendar.js"></script> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
