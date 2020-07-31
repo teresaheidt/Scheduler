@@ -14,9 +14,7 @@ This is a dynamic work day calendar, which shows you color coded time blocks to 
 * css
 * Bootstrap
 * Ajax
-
 # Img
-![My screenshot](img/schedule.png)
+![schedule](img/schedule.png)
 # Link
 https://teresaheidt.github.io/Scheduler/.
-
