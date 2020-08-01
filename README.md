@@ -18,6 +18,6 @@ Within the html file, I added a class of 'time' to the div within the row timebl
 * Bootstrap
 * Ajax
 # Img
-![schedule](img/schedule.png)
+![schedule](assets/schedule.png)
 # Link
 https://teresaheidt.github.io/Scheduler/.
