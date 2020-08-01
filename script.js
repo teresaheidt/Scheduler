@@ -19,10 +19,11 @@ $(document).ready(function() {
 
 // clear items from local storage
 
-// $(“.resetBtn”).on(“click”, function(){
-//     event.preventDefault();
-//     localStorage.clear();
-//     }
+$(".resetBtn").on("click", function(){
+    event.preventDefault();
+    localStorage.clear();
+    getTasks();
+    });
 
 // color code text area dependant on the time; past, present, future
     function checkHour() {
@@ -50,6 +51,7 @@ $(document).ready(function() {
 // get item from local storage
     checkHour();
 
+    function getTasks() {
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
@@ -60,6 +62,9 @@ $(document).ready(function() {
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+    }
+
+    getTasks();
 
 });
 

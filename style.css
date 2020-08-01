@@ -36,6 +36,16 @@ textarea{
   border-top: 1px solid white;;
 }
 
+.time {
+  background-color: #ffffff;
+  font-size: large;
+  padding: 10px;
+  text-align: right;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #000000;
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
